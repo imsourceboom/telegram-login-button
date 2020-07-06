@@ -10,7 +10,7 @@ const jsSet = () => {
       .pipe(
         webpack({
           entry: {
-            app: paths.script.index,
+            app: ["@babel/polyfill", paths.script.index],
           },
           output: {
             filename: "[name].js",
@@ -37,6 +37,7 @@ const jsSet = () => {
             ],
           },
           devtool: "source-map",
+          // mode: "development",
           mode: "production",
         })
       )
