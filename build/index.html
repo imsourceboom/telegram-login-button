@@ -47,8 +47,8 @@
       <div class="container">
         <figure><a href="#"><img src="/assets/images/logo.png" alt="Logo example"></a></figure>
         <div class="telegram-login-component">
-          <button class="login-wrapper" type="button" onclick="return TWidgetLogin.auth();"></button>
-          <script src="https://telegram.org/js/widget-frame.js?27"></script>
+          <button class="login-wrapper" id="widget-login" type="button" onclick="return TWidgetLogin.auth();"></button>
+          <script src="https://telegram.org/js/widget-frame.js?33"></script>
           <script>TWidgetLogin.init('widget_login', 1246794048, {"origin":"https:\/\/telegram-login-button.netlify.app"}, false, "en");</script>
           <script>
             window.addEventListener('message', function(event) {

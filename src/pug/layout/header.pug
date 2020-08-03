@@ -9,8 +9,8 @@ header
             //-     function onTelegramAuth(user) {
             //-         alert('Logged in as ' + user.first_name + ' ' + user.last_name + ' (' + user.id + (user.username ? ', @' + user.username : '') + ')');
             //-     }
-            button.login-wrapper(type="button" onclick="return TWidgetLogin.auth();")
-            script(src="https://telegram.org/js/widget-frame.js?27")
+            button.login-wrapper#widget-login(type="button" onclick="return TWidgetLogin.auth();")
+            script(src="https://telegram.org/js/widget-frame.js?33")
             script.
                 TWidgetLogin.init('widget_login', 1246794048, {"origin":"https:\/\/telegram-login-button.netlify.app"}, false, "en");
             script.
