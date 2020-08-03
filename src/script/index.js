@@ -1,5 +1,5 @@
 import "./smoothscroll";
-import "./hamburger";
+// import "./hamburger";
 import "./menu";
 
 // if ('serviceWorker' in navigator) {
