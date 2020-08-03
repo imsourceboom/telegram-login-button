@@ -1,19 +1,13 @@
-import {
-    header
-} from '../elements'
+const hamburger = document.querySelector(".hamburger");
+const nav = document.querySelector("header .mobile-nav");
+const close = document.querySelector("header .close");
 
+const active = () => {
+  nav.classList.add("active");
+};
+const inactive = () => {
+  nav.classList.remove("active");
+};
 
-const hamburger = header.hamburger;
-const nav = header.nav;
-const li = Array.from(header.li);
-
-const trigger = (e) => {
-    hamburger.classList.toggle('is-active');
-    nav.classList.toggle('active');
-}
-
-hamburger.addEventListener('click', trigger);
-
-li.map((i) => {
-    i.addEventListener('click', trigger);
-});
+hamburger.addEventListener("click", active);
+close.addEventListener("click", inactive);
