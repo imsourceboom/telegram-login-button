@@ -1,6 +1,4 @@
-import "./smoothscroll";
-// import "./hamburger";
-import "./menu";
+import "./hamburger";
 
 // if ('serviceWorker' in navigator) {
 //     window.addEventListener('load', function() {

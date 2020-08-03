@@ -45,5 +45,34 @@ header {
         display: none;
       }
     }
+
+    .mobile-nav {
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 9999;
+      transform: translate3d(100%, 0, 0);
+      transition: 1s;
+      width: 100%;
+      max-width: 300px;
+      height: 100vh;
+      background-color: white;
+
+      &.active {
+        transform: translate3d(0, 0, 0);
+      }
+
+      @media (min-width: 1024px) {
+        display: none;
+      }
+
+      .close {
+        margin: 30px 0 0 30px;
+      }
+
+      .login-container {
+        padding: 200px 0 0 50px;
+      }
+    }
   }
 }
