@@ -3,13 +3,13 @@ header
         figure
             a(href="#")
                 img(src="/assets/images/logo.png" alt="Logo example")
-        //- .telegram-login-component
-        //-     .login-wrapper
-        //-         script(async src="https://telegram.org/js/telegram-widget.js?10" data-telegram-login="TLButton_bot" data-size="large" data-userpic="false" data-radius="10" data-onauth="onTelegramAuth(user)" data-request-access="write")
-        //-         script.
-        //-             function onTelegramAuth(user) {
-        //-                 alert('Logged in as ' + user.first_name + ' ' + user.last_name + ' (' + user.id + (user.username ? ', @' + user.username : '') + ')');
-        //-             }
+        .telegram-login-component
+            .login-wrapper
+                script(async src="https://telegram.org/js/telegram-widget.js?10" data-telegram-login="TLButton_bot" data-size="large" data-userpic="false" data-radius="10" data-onauth="onTelegramAuth(user)" data-request-access="write")
+                script.
+                    function onTelegramAuth(user) {
+                        alert('Logged in as ' + user.first_name + ' ' + user.last_name + ' (' + user.id + (user.username ? ', @' + user.username : '') + ')');
+                    }
         .hamburger.hamburger--squeeze.js-hamburger
             .hamburger-box
                 .hamburger-inner
