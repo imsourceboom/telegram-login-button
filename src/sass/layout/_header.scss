@@ -24,6 +24,18 @@ header {
       // justify-content: center;
     }
 
+    .telegram-login-component {
+      // border: 1px solid red !important;
+      &.desktop {
+        border: 1px solid red !important;
+        display: none;
+
+        @media (min-width: 1024px) {
+          display: flex;
+        }
+      }
+    }
+
     figure {
       width: 100px;
       margin-left: 1rem;
